@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Quit Being So Fast - January 28, 2015</title>
+
+		<meta name="description" content="Quit Being So Fast? - January 28, 2015">
+		<meta name="author" content="Gregory Mazurek">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<style>
+			h1,h2,h3,p {
+				color: black;
+			}
+			body .reveal .slide-background {
+				background: no-repeat;
+				background-position: inherit;
+			}
+			html body p.lead {
+				margin-bottom: 50px;
+				font-weight: bold;
+			}
+			html body p {
+				text-align: left;
+			}
+			html .reveal .slides>section, .reveal .slides>section>section {
+				width: 120%;
+			}
+		</style>
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides" data-background-transition="slide">
+
+				<section data-background="white">
+					<p style="color:black; font-size: 75px;">Web Performance Monitoring:</p>
+					<p style="color:black; font-size: 100px;">Quit Being So Fast!</p>
+				</section>
+
+				<section data-background="white">
+					<p class="lead" style="color:black; font-size: 50px;">Who am I?</p>
+					<p style="color:black; font-size: 50px;">Gregory Mazurek</p>
+					<p style="color:black; font-size: 50px;">Lead Software Engineer at Gilt Groupe, 3.5 years</p>
+					<p style="color:black; font-size: 50px;">gmazurek@gilt.com</p>
+				</section>
+
+				<section data-background="white" data-background-repeat="no-repeat" data-background-image="images/gilt.png">
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">I also previously worked</p>
+					<p style="color:black; font-size: 50px;">in book publishing for 4 years.</p>
+				</section>
+
+				<section data-background="white">
+					<p class="lead" style="color:black; font-size: 50px;">What are we talking about?</p>
+					<p style="color:black; font-size: 50px;">Basics of performance monitoring.</p>
+					<p style="color:black; font-size: 50px;">How do we integrate performance at Gilt?</p>
+					<p style="color:black; font-size: 50px;">Why you should slow down, sometimes.</p>
+				</section>
+
+				<section data-background="white">
+					<p class="lead" style="color:black; font-size: 50px;">What aren't we talking about?</p>
+					<p style="color:black; font-size: 50px;">Native app performance</p>
+					<p style="color:black; font-size: 50px;">Magic</p>
+				</section>
+
+				<section data-background="white">
+					<p class="lead" style="color:black; font-size: 50px;">Tools</p>
+					<p style="color:black; font-size: 50px;">Synthetic Monitoring</p>
+					<p style="color:black; font-size: 50px;">Real User Monitoring (RUM)</p>
+					<p style="color:black; font-size: 50px;">Performance Timing API</p>
+				</section>
+
+				<section data-background="white">
+					<p class="lead" style="color:black; font-size: 50px;">Synthetic Monitoring</p>
+					<p style="color:black; font-size: 50px;">Hit your pages from servers remotely.</p>
+					<p style="color:black; font-size: 50px;">At Gilt, we use Rigor.com.</p>
+				</section>
+
+				<section data-background="white" data-background-repeat="no-repeat" data-background-image="images/rigor.png">
+				</section>
+
+				<section data-background="white" data-background-repeat="no-repeat" data-background-image="images/new-relic.png">
+				</section>
+
+				<section data-background="white">
+					<p class="lead" style="color:black; font-size: 50px;">Real User Monitoring</p>
+					<p style="color:black; font-size: 50px;">Your users generate the data.</p>
+					<p style="color:black; font-size: 50px;">At Gilt, we use New Relic.</p>
+				</section>
+
+				<section data-background="white" data-background-repeat="no-repeat" data-background-image="images/new-relic-rum.png">
+				</section>
+
+				<section data-background="white">
+					<p class="lead" style="color:black; font-size: 50px;">Performance Timing API</p>
+					<p style="color:black; font-size: 50px;">http://bit.ly/fastfastfast</p>
+					<p style="color:black; font-size: 50px;">Google Chrome Plugin that</p>
+					<p style="color:black; font-size: 50px;">visually displays data for the current website.</p>
+					<p style="color:black; font-size: 50px;">Over 400 performance lovers use it.</p>
+				</section>
+
+				<section data-background="white" data-background-repeat="no-repeat" data-background-image="images/performance-timing-api.png">
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">Gilt wants engineers to feel responsible for performance</p>
+				</section>
+
+				<section data-background="white">
+					<p class="lead" style="color:black; font-size: 50px;">PULL Strategy</p>
+					<p style="color:black; font-size: 50px;">We pulled them into our presentations.</p>
+					<p style="color:black; font-size: 50px;">We pulled them into Rigor and New Relic.</p>
+					<p style="color:black; font-size: 50px;">We pulled them into tutorial sessions.</p>
+				</section>
+
+				<section data-background="white">
+					<p class="lead" style="color:black; font-size: 50px;">It didn't work.</p>
+					<p style="color:black; font-size: 50px;">We were interfering with preexisting patterns for development rather than augmenting them.</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">So, we <b>PUSH</b>ed.</p>
+				</section>
+
+				<section data-background="white">
+					<p class="lead" style="color:black; font-size: 50px;">PUSH Strategy</p>
+					<p style="color:black; font-size: 50px;">Performance reviewed during monthly KPI meetings.</p>
+					<p style="color:black; font-size: 50px;">Distribute company-wide reports.</p>
+					<p style="color:black; font-size: 50px;">We -1 commits that are not performant.</p>
+				</section>
+
+				<section data-background="white">
+					<p class="lead" style="color:black; font-size: 50px;">That works.</p>
+					<p style="color:black; font-size: 50px;">Engineers care about performance.</p>
+					<p style="color:black; font-size: 50px;">Our page speeds are getting lower.</p>
+				</section>
+
+				<section data-background="white">
+					<p class="lead" style="color:black; font-size: 50px;">Learn from us.</p>
+					<p style="color:black; font-size: 50px;">3 things you can do</p>
+					<p style="color:black; font-size: 50px; padding-left: 200px;">today</p>
+					<p style="color:black; font-size: 50px;">to improve the performance of your website</p>
+					<p style="color:black; font-size: 50px; padding-left: 400px;">tomorrow.</p>
+				</section>
+
+				<section data-background="white">
+					<p class="lead" style="color:black; font-size: 50px;">1. Make marketing tag performance visible</p>
+					<p style="color:black; font-size: 50px;">Use a tag management container (Signal).</p>
+					<p style="color:black; font-size: 50px;">Monitor performance of these tags.</p>
+					<p style="color:black; font-size: 50px;">Communicate their performance or lack thereof.</p>
+					<p style="color:black; font-size: 50px;">Marketing doesn't want to slow the user experience.</p>
+					<p style="color:black; font-size: 50px;">They want to know if they are.</p>
+				</section>
+
+				<section data-background="white" data-background-repeat="no-repeat" data-background-image="images/marketing-tags.png">
+				</section>
+
+				<section data-background="white">
+					<p class="lead" style="color:black; font-size: 50px;">2. Performance test new features before they go live</p>
+					<p style="color:black; font-size: 50px;">Product team feels responsibility.</p>
+					<p style="color:black; font-size: 50px;">Know what's going to happen before you deploy to prod.</p>
+					<p style="color:black; font-size: 50px;">Don't regress your current features.</p>
+				</section>
+
+				<section data-background="white" data-background-repeat="no-repeat" data-background-image="images/ab-testing.png">
+				</section>
+
+				<section data-background="white">
+					<p class="lead" style="color:black; font-size: 50px;">3. Compress your images</p>
+					<p style="color:black; font-size: 50px;">Our biggest performance gain.</p>
+					<p style="color:black; font-size: 50px;">Get designers approval.</p>
+					<p style="color:black; font-size: 50px;">Designers care about performance as well.</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">What is the difference between these photos?</p>
+				</section>
+
+				<section data-background="white">
+					<img src="images/demo-image-100.jpg" style="height: 500px">
+					<img src="images/demo-image-100.jpg" style="height: 500px">
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">Nothing :)</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">But, what is the difference between these two images?</p>
+				</section>
+
+				<section data-background="white">
+					<img src="images/demo-image-100.jpg" style="height: 500px">
+					<img src="images/demo-image-85.jpg" style="height: 500px">
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">500 kb, the left larger than the right</p>
+				</section>
+
+				<section data-background="white">
+					<p class="lead" style="color:black; font-size: 50px;">3 Big Things:</p>
+					<p style="color:black; font-size: 50px;">Marketing tags.</p>
+					<p style="color:black; font-size: 50px;">Test changes.</p>
+					<p style="color:black; font-size: 50px;">Reduce image sizes.</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">So now you're thinking, "why should I bother to remember these three things?"</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">"There are so many other things I could do!</p>
+					<p style="color:black; font-size: 50px;">The CDN!</p>
+					<p style="color:black; font-size: 50px;">Pre-fetching assets!</p>
+					<p style="color:black; font-size: 50px;">No more CSS3 animations!"</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">"Shouldn't I just make my website fast.</p>
+					<p style="color:black; font-size: 50px;">Like, real fast!"</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">"All my users will know my site</p>
+					<p style="color:black; font-size: 50px;">as the fastest</p>
+					<p style="color:black; font-size: 50px;">in ALL THE LAND!"</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">And I'm thinking, "your users don't care...</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">...as much as you care."</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">Let's talk about books.</p>
+				</section>
+
+				<section data-background="white" data-background-repeat="no-repeat" data-background-image="images/book2.jpg">
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">How could we measure</p>
+					<p style="color:black; font-size: 50px;">the performance of reading a book?</p>
+				</section>
+
+				<section data-background="white">
+					<p class="lead" style="color:black; font-size: 50px;">On The Client Side:</p>
+					<p style="color:black; font-size: 50px;">How quickly did the text load?</p>
+					<p style="color:black; font-size: 50px;">Were the images preloaded?</p>
+					<p style="color:black; font-size: 50px;">How soon does a page load upon flip?</p>
+				</section>
+
+				<section data-background="white">
+					<p class="lead" style="color:black; font-size: 50px;">On The Server Side:</p>
+					<p style="color:black; font-size: 50px;">How long did it take to write?</p>
+					<p style="color:black; font-size: 50px;">What was the editing time?</p>
+					<p style="color:black; font-size: 50px;">Was it 4-color or black/white?</p>
+					<p style="color:black; font-size: 50px;">How long did it take to ship to the store?</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">A hardcover book !=</p>
+					<p style="color:black; font-size: 50px; padding-left: 100px;">trade paperback !=</p>
+					<p style="color:black; font-size: 50px; padding-left: 200px;">mass market paperback !=</p>
+					<p style="color:black; font-size: 50px; padding-left: 300px;">ebook</p>
+					<p style="color:black; font-size: 50px; margin-top: 50px;">Differences in price, size, paper quality, and cover.</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">But,</p>
+					<p style="color:black; font-size: 50px; padding-left: 100px;">hardcover book ~== another hardcover book</p>
+					<p style="color:black; font-size: 50px; padding-left: 185px;">trade paper ~== another trade paper</p>
+					<p style="color:black; font-size: 50px; padding-left: 165px;">mass market ~== another mass market</p>
+					<p style="color:black; font-size: 50px; padding-left: 300px;">ebook ~== another ebook</p>
+					<p style="color:black; font-size: 50px; margin-top: 50px;">What is the difference?</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">The Content.</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">If a book's format is like a web browser,</p>
+					<p style="color:black; font-size: 50px;">the content is like the HTML, JS, CSS.</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">There isn't an audience of readers</p>
+					<p style="color:black; font-size: 50px;">demanding a format</p>
+					<p style="color:black; font-size: 50px;">that doesn't exist.</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">They don't ask for an unknown,</p>
+					<p style="color:black; font-size: 50px;">not-yet-created, <i>magic</i> book format.</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">They want something that looks</p>
+					<p style="color:black; font-size: 50px;">and feels</p>
+					<p style="color:black; font-size: 50px;">like what they know.</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">What is the corrollary for the web?</p>
+					<p style="color:black; font-size: 50px;">Your user experience should be similar</p>
+					<p style="color:black; font-size: 50px; padding-left: 200px;">to other user experiences.</p>
+					<p style="color:black; font-size: 50px;">We see this all the time with <i>patterns</i>.</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">You make it fast!</p>
+					<p style="color:black; font-size: 50px;">How fast?</p>
+					<p style="color:black; font-size: 50px;">Super fast!</p>
+					<p style="color:black; font-size: 50px;">But why?</p>
+					<p style="color:black; font-size: 50px;">Because studies say so! That makes sense!</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">Studies show that</p>
+					<p style="color:black; font-size: 50px;">increased page load times</p>
+					<p style="color:black; font-size: 50px;">lead to decreased conversion.</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">But, Gilt did a test a few years back</p>
+					<p style="color:black; font-size: 50px;">that proved the opposite.</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">We slowed</p>
+					<p style="color:black; font-size: 50px;">each page request by 1 second.</p>
+					<p style="color:black; font-size: 50px;">And, there was no change in conversion.</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">A lot of times when we think about performance,</p>
+					<p style="color:black; font-size: 50px;">we think only about ourselves.</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">But really, we should consider ourselves</p>
+					<p style="color:black; font-size: 50px; padding-left: 200px;">hardcover books</p>
+					<p style="color:black; font-size: 50px;">and we should compare ourselves to other</p>
+					<p style="color:black; font-size: 50px; padding-left: 400px;">hardcover books.</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">There's no point to being super fast</p>
+					<p style="color:black; font-size: 50px;">if it means losing essential features.</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">The point is to be reasonable and responsible.</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">If your goal is speed,</p>
+					<p style="color:black; font-size: 50px;">you're going to create a product</p>
+					<p style="color:black; font-size: 50px;">based on speed.</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">If your goal is a good user experience,</p>
+					<p style="color:black; font-size: 50px;">you might have to sacrifice a bit</p>
+					<p style="color:black; font-size: 50px;">on speed.</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">You have to decide what is right</p>
+					<p style="color:black; font-size: 50px;">for your users</p>
+					<p style="color:black; font-size: 50px;">based on your company's objectives.</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">But one thing is for sure:</p>
+					<p style="color:black; font-size: 50px; padding-left: 100px;">if you're a hardcover book</p>
+					<p style="color:black; font-size: 50px; padding-left: 200px;">you want to be at least as good as</p>
+					<p style="color:black; font-size: 50px; padding-left: 300px;">all the other hardcover books.</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">Measuring your own site's performance is good.</p>
+					<p style="color:black; font-size: 50px;">Measuring your site's performance against your competition is better.</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">You can use the Google Chrome Extension</p>
+					<p style="color:black; font-size: 50px;">as a start:</p>
+					<p style="color:black; font-size: 50px;">http://www.bit.ly/fastfastfast</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">If your website looks, performs, and acts like a hardcover book, it'll be a hardcover book.</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">In publishing, do you why we call</p>
+					<p style="color:black; font-size: 50px;">a large-format book</p>
+					<p style="color:black; font-size: 50px; padding-left: 200px;">with lots of pictures</p>
+					<p style="color:black; font-size: 50px; padding-left: 400px;">a <i>"coffee-table"</i> book?</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">Because they're heavy,</p>
+					<p style="color:black; font-size: 50px;">they're difficult to hold,</p>
+					<p style="color:black; font-size: 50px;">and they largely go unread.</p>
+				</section>
+
+				<section data-background="white">
+					<p style="color:black; font-size: 50px;">If you want your website to be a</p>
+					<p style="color:black; font-size: 50px;">hardcover book,</p>
+					<p style="color:black; font-size: 50px;">don't create a coffee-table book.</p>
+				</section>
+
+				<section data-background="white">
+					<p class="lead" style="color:black; font-size: 50px;">In Summary</p>
+					<p style="color:black; font-size: 50px;">Know what kind of book format you want to be.</p>
+					<p style="color:black; font-size: 50px;">Be as fast as you need to be.</p>
+					<p style="color:black; font-size: 50px;">Be similar or better than your competition.</p>
+					<p style="color:black; font-size: 50px;">Don't regress in quality.</p>
+					<p style="color:black; font-size: 50px;">Don't only obsess over your numbers.</p>
+					<p style="color:black; font-size: 50px;">Obsess over your numbers as compared to your competition's numbers.</p>
+				</section>
+
+				<section data-background="white">
+					<p class="lead" style="color:black; font-size: 50px;">Thank you!</p>
+					<p style="color:black; font-size: 50px;">gmazurek@gilt.com</p>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
